@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ImFanJs/black-barbershop/static/css/main.dc090a44.chunk.css",
+    "main.js": "/ImFanJs/black-barbershop/static/js/main.ba563360.chunk.js",
+    "main.js.map": "/ImFanJs/black-barbershop/static/js/main.ba563360.chunk.js.map",
+    "runtime-main.js": "/ImFanJs/black-barbershop/static/js/runtime-main.9a3c2b5f.js",
+    "runtime-main.js.map": "/ImFanJs/black-barbershop/static/js/runtime-main.9a3c2b5f.js.map",
+    "static/css/2.de424728.chunk.css": "/ImFanJs/black-barbershop/static/css/2.de424728.chunk.css",
+    "static/js/2.2d1f5959.chunk.js": "/ImFanJs/black-barbershop/static/js/2.2d1f5959.chunk.js",
+    "static/js/2.2d1f5959.chunk.js.map": "/ImFanJs/black-barbershop/static/js/2.2d1f5959.chunk.js.map",
+    "index.html": "/ImFanJs/black-barbershop/index.html",
+    "precache-manifest.764783e8f73c0f6aba6981c1c49d46ef.js": "/ImFanJs/black-barbershop/precache-manifest.764783e8f73c0f6aba6981c1c49d46ef.js",
+    "service-worker.js": "/ImFanJs/black-barbershop/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/ImFanJs/black-barbershop/static/css/2.de424728.chunk.css.map",
+    "static/css/main.dc090a44.chunk.css.map": "/ImFanJs/black-barbershop/static/css/main.dc090a44.chunk.css.map",
+    "static/js/2.2d1f5959.chunk.js.LICENSE.txt": "/ImFanJs/black-barbershop/static/js/2.2d1f5959.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ImFanJs/black-barbershop/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a3c2b5f.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.2d1f5959.chunk.js",
+    "static/css/main.dc090a44.chunk.css",
+    "static/js/main.ba563360.chunk.js"
+  ]
+}
