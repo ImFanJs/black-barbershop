@@ -24,6 +24,7 @@ const ClientsList = ({ users, deleteUser }) => {
             >
               <FaUser />
               <span className='pl-2'>{user.name}</span>
+              <span className='pl-2 text-info'>({user.points})</span>
             </div>
             <FaTimes
               className='text-danger ml-1'

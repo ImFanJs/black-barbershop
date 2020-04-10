@@ -3,20 +3,34 @@ import { useHistory } from 'react-router-dom';
 
 import Back from '../layout/back';
 
-const ClientsForm = ({ setUsersHandle }) => {
+const ClientsForm = ({ setUsersHandle, updateUser }) => {
   let history = useHistory();
-  const [name, setName] = useState('');
+
+  const userToEdit = history.location.state ? history.location.state : '';
+  const nameUser = userToEdit ? userToEdit.name : '';
+
+  const [name, setName] = useState(nameUser);
 
   const saveChanges = () => {
-    const user = { name: name, points: 1 };
-    setUsersHandle(user);
+    const user = {};
+
+    if (userToEdit) {
+      user.name = name;
+      user.id = userToEdit.id;
+      user.points = userToEdit.points;
+      updateUser(user);
+    } else {
+      user.name = name;
+      user.points = 1;
+      setUsersHandle(user);
+    }
     history.push('/clients');
   };
 
   return (
     <div className='col-12 d-flex flex-column'>
       <Back />
-      <h3 className='mt-2 mb-5'>Agregar Cliente</h3>
+      <h3 className='mt-2 mb-5'>{userToEdit ? 'Editar' : 'Agregar'} Cliente</h3>
       <div className='form-group'>
         <label className='form-label'>Nombre Del Cliente</label>
         <input
@@ -32,7 +46,7 @@ const ClientsForm = ({ setUsersHandle }) => {
         disabled={!name}
         onClick={() => saveChanges()}
       >
-        Crear
+        {userToEdit ? 'Actualizar' : 'Crear'}
       </button>
     </div>
   );

@@ -19,8 +19,12 @@ const ClientDetails = ({ updateUser }) => {
       <FaUser size={100} />
       <div className='d-flex flex-column align-items-start'>
         <p className='mt-3'>
-          {/* TO-DO => Update name in user */}
-          {user.name} <FaPencilAlt size={24} className='pl-2 text-primary' />
+          {user.name}{' '}
+          <FaPencilAlt
+            size={24}
+            className='pl-2 text-primary'
+            onClick={() => history.push('/clients/new', user)}
+          />
         </p>
         <p>Citas: {appointments}</p>
       </div>

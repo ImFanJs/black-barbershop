@@ -24,7 +24,7 @@ const App = () => {
     {
       id: 3,
       name: 'Alejandro Robles',
-      points: 0,
+      points: 1,
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const App = () => {
     {
       id: 6,
       name: 'Jaziel Montes',
-      points: 0,
+      points: 1,
     },
   ];
   const [users, setUsers] = useState(initialUsers);
@@ -67,7 +67,10 @@ const App = () => {
               <Home />
             </Route>
             <Route exact path='/clients/new'>
-              <ClientsForm setUsersHandle={setUsersHandle} />
+              <ClientsForm
+                setUsersHandle={setUsersHandle}
+                updateUser={updateUser}
+              />
             </Route>
             <Route exact path='/clients'>
               <ClientsList users={users} deleteUser={deleteUser} />
